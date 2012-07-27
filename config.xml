@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "ar.com.contenta.videostreaming"
-	version 	= "1.0.0">
+	version 	= "0.0.1">
 
 	<name>Contenta VideoStreaming</name>
 
@@ -15,6 +15,12 @@
 		Luciano Fantone
 	</author>
 
+	<preference name="phonegap-version" value="2.0.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="stay-in-webview" value="true" />
+	<preference name="android-installLocation" value="auto" />
+
 	<gap:platforms>
 		<gap:platform name="android" minVersion="7" />
 		<gap:platform name="webos" />
@@ -26,7 +32,10 @@
 
     <gap:splash src="weirdo.png" />
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
+	<gap:plugin name="VideoPlayer" />
+
+	<access origin="*" />
 </widget>
